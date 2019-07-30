@@ -25,12 +25,7 @@ article {
 #me {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
     width: 240px;
-}
-
-table {
-    margin: 0 auto;
 }
 
 #me img {
