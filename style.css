@@ -1,0 +1,76 @@
+body {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-position: top;
+    color: white;
+    font-family: "Exo 2";
+}
+
+a {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+article {
+    width: 489px;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#me {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 240px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+#me img {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+}
+
+#me span {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#username {
+    font-size: xx-large;
+}
+
+#actualname {
+    color: grey;
+}
+
+.key {
+    color: grey;
+    padding-right: 10px;
+}
+
+#desc {
+    text-align: justify;
+}
+
+.projects .title {
+    font-size: larger;
+}
+
+ul {
+    margin-top: 2px;
+}
+
+.head {
+    font-weight: bold;
+}
