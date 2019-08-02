@@ -29,7 +29,6 @@ table {
 #me {
     display: flex;
     flex-direction: row;
-    width: 240px;
 }
 
 #me img {
