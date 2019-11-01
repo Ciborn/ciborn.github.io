@@ -12,7 +12,7 @@ a {
 }
 
 article {
-    width: 489px;
+    width: 500px;
 }
 
 .centered {
@@ -37,7 +37,7 @@ table {
     height: auto;
 }
 
-#me span {
+#name-data {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -48,12 +48,80 @@ table {
     font-size: xx-large;
 }
 
-#actualname {
+.realname {
+    opacity: 0;
     color: grey;
 }
 
-.key {
+#me #nickname {
+    transition: right 0.2s;
+}
+
+#me .realname {
+    transition: opacity 0.2s;
+}
+
+#me:hover #nickname {
+    right: 0px;
+}
+
+#me:hover .realname {
+    opacity: 1;
+}
+
+#job {
+    transition: color 0.2s;
     color: grey;
+}
+
+#me:hover #job {
+    color: white;
+}
+
+#nickname {
+    position: relative;
+    right: 90px;
+}
+
+#social-links {
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#rs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 15px;
+}
+
+#rs a {
+    margin: 0 5px 0 5px;
+    color: grey;
+    transition: color 0.2s;
+}
+
+#rs a:hover {
+    color: lightskyblue;
+    transition: all 0.2s;
+}
+
+#rs a:hover::before {
+    content: "> ";
+}
+
+#rs a:hover::after {
+    content: " <";
+}
+
+.key {
+    color: #aaa;
     padding-right: 12px;
 }
 
