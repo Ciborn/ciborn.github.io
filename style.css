@@ -12,7 +12,7 @@ a {
 }
 
 article {
-    width: 500px;
+    width: 483px;
 }
 
 .centered {
@@ -23,6 +23,7 @@ article {
 }
 
 table {
+    margin-top: 20px;
     border-collapse: collapse;
 }
 
@@ -69,12 +70,12 @@ table {
     opacity: 1;
 }
 
-#job {
+.greytowhite {
     transition: color 0.2s;
     color: grey;
 }
 
-#me:hover #job {
+#me:hover .greytowhite {
     color: white;
 }
 
@@ -86,29 +87,23 @@ table {
 #social-links {
     font-family: 'Courier New', Courier, monospace;
     display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
 }
 
 #rs {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 100%;
     color: grey;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 15px;
+    margin-left: -5px;
 }
 
 #rs a {
-    margin: 0 5px 0 5px;
-    color: grey;
+    padding: 0 5px 0 5px;
+    color: lightgray;
     transition: color 0.2s;
 }
 
 #rs a:hover {
-    color: lightskyblue;
     transition: all 0.2s;
 }
 
@@ -123,6 +118,7 @@ table {
 .key {
     color: #aaa;
     padding-right: 12px;
+    font-weight: bold;
 }
 
 #desc {
@@ -139,4 +135,24 @@ ul {
 
 .head {
     font-weight: bold;
+}
+
+#sml-osu:hover {
+    color: #f06fa9;
+}
+
+#sml-spotify:hover {
+    color: #18d860;
+}
+
+#sml-twitter:hover {
+    color: #1da1f2;
+}
+
+#sml-reddit:hover {
+    color: #ff4300;
+}
+
+#sml-github:hover {
+    color: white;
 }
