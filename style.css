@@ -1,9 +1,12 @@
 body {
-    background-image: url("images/bg.png");
+    background: black url("images/bg.png") no-repeat center center fixed;
     background-size: cover;
-    background-position: top;
     color: white;
     font-family: "Exo 2";
+    line-height: 1.2;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-around;
 }
 
 a {
@@ -12,11 +15,14 @@ a {
 }
 
 article {
-    width: 483px;
+    align-self: center;
+    display: inline-block;
+    padding: 20px;
+    width: 523px;
 }
 
 .centered {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -105,6 +111,7 @@ table {
 
 #rs a:hover {
     transition: all 0.2s;
+    text-decoration: overline underline;
 }
 
 #rs a:hover::before {
@@ -123,9 +130,10 @@ table {
 
 #desc {
     text-align: justify;
+    margin-top: 10px;
 }
 
-.projects .title {
+.projects-title {
     font-size: larger;
 }
 
@@ -155,4 +163,90 @@ ul {
 
 #sml-github:hover {
     color: white;
+}
+
+.projects .help, .projects .title {
+    margin-bottom: 10px;
+    color: lightgray;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-size: 90%;
+}
+
+.project .img {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px 0 0 10px;
+    min-width: 95px;
+    height: 95px;
+}
+
+.project img {
+    border-radius: 10px;
+    width: 95px;
+    height: 95px;
+}
+
+.project .description {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-radius: 0 10px 10px 0px;
+}
+
+.project .en-tete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px 10px 0 10px;
+}
+
+.project .en-tete {
+    color: darkgray;
+}
+
+.project .en-tete .title {
+    color: white;
+    font-size: larger;
+}
+
+.project-desc {
+    padding: 5px 10px 0 10px;
+}
+
+.badges {
+    margin: -10px 0 0 10px;
+}
+
+.badge#discord {
+    background-color: #7289DA;
+}
+
+.badge#javascript {
+    background-color: #f7d71e;
+    color: black;
+}
+
+.badge#android {
+    background-color: #a5c736;
+    color: black;
+}
+
+.badge#flutter {
+    background-color: #28b6f6;
+    color: black;
+}
+
+.badge#project {
+    background-color: orange;
+    color: black;
+}
+
+.badge#github {
+    background-color: #fafbfc;
+    color: black;
 }

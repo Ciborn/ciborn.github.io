@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
     </head>
     <body>
-       <article class="centered">
+       <article class="">
            <div id="me">
                <img src="images/avatar.png">
                <span id="name-data">
@@ -14,7 +16,7 @@
                         <span class="realname">Bourachot</span>
                     </div>
                     <div><a href="mailto:me@ciborn.dev">me@ciborn.dev</a></div>
-                    <div class="greytowhite">Node.js Backend Developer</div>
+                    <div class="greytowhite">Student in High School</div>
                </span>
            </div>
            <table>
@@ -37,19 +39,63 @@
                     <td class="key">Discord</td>
                     <td>Ciborn#2844 (<a href="https://dsc.bio/ciborn">More</a>)</td>
                 </tr>
-           </table>
-           <p id="desc">He/Him - 18 years-old high schooler who plays osu!, Minecraft and other games; I mostly develop Discord bots with Node.js but I plan to do much more <span style="text-decoration: line-through;">gib time plz</span>! People consider me a weeb but please I am not and I listen to very popular music such as Progressive Metal, Artcore and Epic Orchestra (yes very popular)!</p>
-           <span class="projects">
-               <div class="title">Projects</div>
-               <ul>
-                    <li><span class="head"><a href="https://www.nightorn.com">Nightorn</a></span> Multiple projects around Discord with cool people.
-                        <ul>
-                            <li><span class="head"><a href="https://aldebaran.nightorn.com">Aldebaran</a></span> A multi-purposes Discord bot!</li>
-                            <li>more to come I guess</li>
-                        </ul>
-                    </li>
-               </ul>
-           </span>
-       </article> 
+           	</table>
+           	<p id="desc">He/Him - 18 years-old high schooler who plays osu!, Minecraft and other games; I mostly develop Discord bots with Node.js but I plan to do much more <span style="text-decoration: line-through;">gib time plz</span>! People consider me a weeb but please I am not and I listen to very popular music such as Progressive Metal, Artcore and Epic Orchestra (yes very popular)!</p>
+           	<span class="projects">
+                <div class="projects-title">Projects</div>
+				<div class="help">You can click the GitHub badge to access the repo!</div>
+                <span class="project">
+                    <span class="img">
+                        <img src="images/aldebaran.png"/>
+                    </span>
+                    <span class="description">
+                        <span class="en-tete">
+                            <div class="title">Aldebaran</div>
+                            <div class="status">In continuous development</div>
+						</span>
+						<span class="badges">
+							<span class="badge" id="discord">Discord</span>
+							<span class="badge" id="javascript">JavaScript</span>
+							<span class="badge" id="project">Group Project</span>
+							<a target="_blank" href="https://github.com/Nightorn/Aldebaran"><span class="badge" id="github">GitHub</span></a>
+						</span>
+                        <div class="project-desc">A multi-purposes bot that offers assistance for DiscordRPG with action, image and games commands!</div>
+                    </span>
+                </span>
+                <span class="project">
+                    <span class="img">
+						<img src="images/tranquility.png"/>
+					</span>
+                    <span class="description">
+                        <span class="en-tete">
+                            <div class="title">Tranquility</div>
+                            <div class="status">Done</div>
+                        </span>
+						<span class="badges">
+							<span class="badge" id="discord">Discord</span>
+							<span class="badge" id="javascript">JavaScript</span>
+							<a target="_blank" href="https://github.com/Ciborn/Tranquility"><span class="badge" id="github">GitHub</span></a>
+						</span>
+                        <div class="project-desc">A bot that monitors all your activity on a server, and setup an entire economy system around it!</div>
+                    </span>
+                </span>
+                <span class="project">
+                    <span class="img"></span>
+                    <span class="description">
+                        <span class="en-tete">
+                            <div class="title">Spotify Analytics</div>
+                            <div class="status">Work In Progress</div>
+                        </span>
+						<span class="badges">
+							<span class="badge" id="android">Android</span>
+							<span class="badge" id="flutter">Flutter/Dart</span>
+						</span>
+                        <div class="project-desc">Look at detailled Spotify statistics about what you listen to, on your phone!</div>
+                    </span>
+                </span>
+            </span>
+        </article> 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
-</html
+</html>
