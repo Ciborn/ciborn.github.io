@@ -1,11 +1,17 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background: black url("images/bg.png") no-repeat center center fixed;
     background-size: cover;
+    box-sizing: border-box;
     color: white;
     font-family: "Exo 2";
     line-height: 1.2;
     display: flex;
-    min-height: 100vh;
     justify-content: space-around;
 }
 
@@ -162,6 +168,10 @@ ul {
     color: #0e76a8;
 }
 
+.urca {
+    color: lightgray;
+}
+
 .projects .help, .projects .title {
     margin-bottom: 10px;
     color: lightgray;
@@ -214,6 +224,13 @@ ul {
     padding: 5px 10px 0 10px;
 }
 
+.badge {
+    border-radius: 4px;
+    font-size: smaller;
+    font-weight: 550;
+    padding: 2px 4px 2px 4px;
+}
+
 .badges {
     margin: -10px 0 0 10px;
 }
@@ -249,8 +266,4 @@ ul {
 .badge#github {
     background-color: #fafbfc;
     color: black;
-}
-
-#naptha_container0932014_0707 {
-    display: none;
 }
