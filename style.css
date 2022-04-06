@@ -21,13 +21,6 @@ article {
     width: 523px;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 table {
     margin-top: 20px;
     border-collapse: collapse;
@@ -165,12 +158,18 @@ ul {
     color: white;
 }
 
+#sml-linkedin:hover {
+    color: #0e76a8;
+}
+
 .projects .help, .projects .title {
     margin-bottom: 10px;
     color: lightgray;
 }
 
 .project {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
@@ -178,8 +177,6 @@ ul {
 }
 
 .project .img {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px 0 0 10px;
     min-width: 95px;
     height: 95px;
 }
@@ -191,7 +188,6 @@ ul {
 }
 
 .project .description {
-    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
@@ -223,12 +219,16 @@ ul {
 }
 
 .badge#discord {
-    background-color: #7289DA;
+    background-color: #5865F2;
 }
 
 .badge#javascript {
     background-color: #f7d71e;
     color: black;
+}
+
+.badge#typescript {
+    background-color: #3178c6;
 }
 
 .badge#android {
@@ -249,4 +249,8 @@ ul {
 .badge#github {
     background-color: #fafbfc;
     color: black;
+}
+
+#naptha_container0932014_0707 {
+    display: none;
 }
