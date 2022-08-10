@@ -20,11 +20,15 @@ article {
     background-color: #222222;
     border-radius: 15px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px #222222;
+    box-shadow: 0 0 8px #222222;
     display: inline-block;
     margin: 20px;
     padding: 20px;
-    width: 600px;
+    width: 550px;
+}
+
+h3 {
+    margin-bottom: 0%;
 }
 
 table {
@@ -132,10 +136,6 @@ table {
     margin-top: 10px;
 }
 
-.projects-title {
-    font-size: larger;
-}
-
 ul {
     margin-top: 2px;
 }
@@ -172,6 +172,56 @@ ul {
     color: lightgray;
 }
 
+#links {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 5px;
+}
+
+.link {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    gap: 6px;
+    padding: 5px;
+    width: 100%;
+}
+
+.link, .link-desc, .link-desc::before {
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link:hover {
+    background-color: rgba(120, 190, 240, 1);
+    box-shadow: 0 0 3px rgba(120, 190, 240, 1);
+}
+
+.link img {
+    height: 22px;
+    width: auto;
+}
+
+.link-title {
+    font-weight: bold;
+}
+
+.link-desc, .link-desc::before {
+    color:rgba(255, 255, 255, 0.8)
+}
+
+.link:hover, .link:hover .link-desc, .link:hover .link-desc::before {
+    color: black;
+}
+
+.link-desc::before {
+    content: "•";
+    margin-right: 5px;
+}
+
 .projects .help, .projects .title {
     margin-bottom: 10px;
     color: lightgray;
@@ -180,9 +230,10 @@ ul {
 .project {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 90%;
 }
 
