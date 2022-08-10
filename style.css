@@ -17,10 +17,10 @@ a {
 
 article {
     align-self: center;
-    background-color: #1d1d33;
+    background-color: #222222;
     border-radius: 15px;
     box-sizing: border-box;
-    box-shadow: 2px 2px 2px #1d1d33;
+    box-shadow: 0 0 10px #222222;
     display: inline-block;
     margin: 20px;
     padding: 20px;
